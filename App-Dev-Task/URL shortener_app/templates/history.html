@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History page of URLS</title>
+
+</Title>  
+</Head>  
+<Body>   
+<font face="arial">
+</head>
+
+
+<body>
+  <h1 align="center"><u> My URL Shortner History Page </u></h1> 
+
+    <nav>
+      <h3>  <a href = "/">Home</a> </h3>
+    </nav>
+    <style>
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 50%;
+      }
+      
+      td, th {
+        border: 1px solid #ff0505;
+        text-align: left;
+        padding: 18px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+
+
+
+    <h1>History of URL's</h1>
+    <table>
+        <tr>
+            <th>Original url</th>
+            <th>Shortened url </th>
+        </tr>
+
+
+    {% for short_url in  data %}
+        <tr>
+      <td>  {{ data[short_url]}} </td>
+       <td> https/{{short_url}} </td>
+        </tr>
+    {% endfor %}
+</table>
+<h3> <a href = "/history">History</a> </h3> 
+</body>
+</html>

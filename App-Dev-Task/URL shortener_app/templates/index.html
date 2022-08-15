@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Url shortener page</title>
+
+</Title>  
+</Head>  
+<body bgcolor="silver"> 
+    <h1 align="center"><u> My URL Shortner Home Page </u></h1>  
+ 
+
+    
+
+</head>
+
+<style>
+    div {
+      background-color: rgb(43, 246, 53);
+      width: 1000px;
+      border: 150px rgb(237, 42, 42);
+      padding: 100px;
+      margin: 20px;
+    }
+    </style>
+
+<body >
+    <nav>
+       <h3> <a href = "/"> Home </a> </h3>
+    </nav>
+   
+    <html>
+        <head>
+        <style>
+        h1 {text-align: center;}
+        p {text-align: center;}
+        div {text-align: center;}
+        </style>
+        </head>
+        <body>
+
+
+            
+   <div>
+    <form  action = ""  method = "post">
+        Enter the Original Url : <input type = "url" name = "inp_1" class = "form-control" placeholder="paste original url" >
+        <button>URL SHORTENER 🤪</button><br><br>
+   
+   
+    </form>
+Shortened Url :
+               <input class = 'form-control'   value = "127.0.0.1:5000/https/{{k}}" id = "myInp"  >
+                    
+               <button id = "btncopy">Copy ✅</button>
+
+                <script type = "text/javascript">
+                const myInp = document.getElementById("myInp");
+                const btncopy = document.getElementById("btncopy");
+                
+                btncopy.onclick = function(){
+                    myInp.select();
+                    document.execCommand("Copy");
+                } ;
+            
+            </script>
+        </div>
+        <h3> <a href = "/history"> History </a></h3> 
+</body>
+
+</html>
